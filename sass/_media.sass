@@ -1,0 +1,47 @@
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) 
+  /* CSS для ширины от 992px до 1199px */
+  .wrapper
+    max-width: 960px
+
+
+/* md-размер (<=991px) */
+@media (max-width: 991px)
+  /* CSS для ширины от 768px до 991px */
+  .wrapper
+    max-width: 760px
+  .header
+    &__search
+      margin-left: auto
+
+      
+/* sm-размер (<=768px) */
+@media (max-width: 767px) 
+  /* CSS для ширины от 576px до 767px */
+  .wrapper
+    max-width: 576px
+  .header
+    &__top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__logo
+      max-width: 133px
+      &-link
+        max-width: 100%
+    &-menu
+      &__list
+        padding-top: 22px
+        padding-bottom: 22px
+      &__item
+        font-size: 12px
+
+    .search-form
+      max-width: 340px  
+
+
+// /* xs-размер (<=575px) */
+// @media (max-width: 575px) 
+//   /* CSS для ширины до 575px (включительно) */

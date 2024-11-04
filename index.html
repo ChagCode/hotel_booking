@@ -9,8 +9,8 @@
     <title>Hotel Booking - Web start</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
+    <header class="header">
+      <div class="wrapper">
         <div class="header__top">
           <a href="#" class="header__logo">
             <img
@@ -20,7 +20,7 @@
             />
           </a>
 
-          <form action="" class="search-form">
+          <form action="" class="header__search search-form">
             <input
               type="text"
               class="search-form__input"
@@ -35,18 +35,21 @@
             </button>
           </form>
 
-          <div class="header__user">
+          <a href="#" class="header__user">
             <img
               src="images/avatar.png"
               alt="Avatar Nathan"
               class="header__user-avatar"
             />
             <span class="header__user-name">Nathan</span>
-          </div>
+          </a>
           <!-- /.header__user -->
         </div>
         <!-- /.header__top -->
-        <div class="header-menu">
+      </div>
+      <!-- /.wrapper -->
+      <div class="header-menu">
+        <div class="wrapper">
           <ul class="header-menu__list">
             <li class="header-menu__item">
               <a href="#" class="header-menu__link">All Deals</a>
@@ -71,8 +74,10 @@
             </li>
           </ul>
         </div>
-        <!-- /.header-menu -->
-      </header>
+        <!-- /.wrapper -->
+      </div>
+      <!-- /.header-menu -->
+    </header>
 
       <section class="main"></section>
 
