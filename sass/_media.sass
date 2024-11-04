@@ -2,11 +2,10 @@
 /* CSS для >=1200px */
 
 /* lg-размер (<=1199px) */
-@media (max-width: 1199px) 
+@media (max-width: 1199px)
   /* CSS для ширины от 992px до 1199px */
   .wrapper
     max-width: 960px
-
 
 /* md-размер (<=991px) */
 @media (max-width: 991px)
@@ -16,14 +15,6 @@
   .header
     &__search
       margin-left: auto
-
-      
-/* sm-размер (<=768px) */
-@media (max-width: 767px) 
-  /* CSS для ширины от 576px до 767px */
-  .wrapper
-    max-width: 576px
-  .header
     &__top
       padding-top: 30px
       padding-bottom: 30px
@@ -37,11 +28,38 @@
         padding-bottom: 22px
       &__item
         font-size: 12px
+  .search-form
+    max-width: 340px
 
-    .search-form
-      max-width: 340px  
-
+/* sm-размер (<=768px) */
+@media (max-width: 767px)
+  /* CSS для ширины от 576px до 767px */
+  .wrapper
+    max-width: 576px
+    width: 92%
+  .header
+    .search-form, &__user, &-menu
+      display: none
+    &__hidden-menu
+      width: 16px
+      height: 11px
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      background-color: $light
+      cursor: pointer
+      &__btn
+        background-color: $text-color
+        width: 16px
+        height: 1px
 
 // /* xs-размер (<=575px) */
-// @media (max-width: 575px) 
+@media (max-width: 575px)
+  .header
+    &__logo
+      max-width: 99px
+      &-link
+        max-width: 100%
+
 //   /* CSS для ширины до 575px (включительно) */
