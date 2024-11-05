@@ -5,6 +5,7 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -80,6 +81,18 @@ body {
 .header-menu__item {
   color: #fff;
   font-size: 14px;
+}
+
+.breadcrump {
+  padding: 18px 0;
+}
+.breadcrump-list {
+  display: flex;
+  align-items: center;
+}
+.breadcrump-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
 }
 
 /* xl-размер (>=1200px) */
