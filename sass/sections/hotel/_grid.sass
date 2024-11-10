@@ -1,0 +1,104 @@
+.hotel-grid
+  display: flex
+  justify-content: space-between
+
+.swiper
+  position: relative
+  width: 728px
+  height: 450px
+  border-radius: 8px
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%)
+    z-index: 10
+.slider
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 11
+    width: 30px
+    height: 30px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../images/icons/arrow-rigth.svg)
+    &--prev
+      left: 18px
+      background-image: url(../images/icons/arrow-left.svg)
+
+// &__booking
+
+.booking
+  display: flex
+  flex-direction: column
+  width: 350px
+  height: 210px
+  border-radius: 8px
+  background-color: $view-booking
+  color: $light
+  font-family: "Nunito", sans-serif
+  padding: 26px 26px 29px 29px
+  margin-left: 30px
+  &-price
+    display: flex
+    justify-content: space-between
+    &__items
+      width: 86px
+      height: 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      margin-bottom: 11px
+    &__starts
+      font-weight: 400
+      font-size: 10px
+    &__numb
+      font-weight: 800
+      font-size: 24px
+    &__per
+      font-weight: 400
+      font-size: 12px
+    &__item
+      display: block
+    &__info
+      width: 80px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      font-weight: 400
+      font-size: 12px
+      height: 65%
+    &__guest, &__room
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__icon
+      width: 14px
+      height: 14px
+
+  &-quick
+    display: flex
+    justify-content: space-between
+    font-weight: 600
+    font-size: 18px
+    margin-bottom: 19px
+
+  &-btn
+    border-radius: 4px
+    width: 100%
+    height: 45px
+    color: $light
+    background-color: $btn-color

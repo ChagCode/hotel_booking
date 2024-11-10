@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hotel Booking - Web start</title>
   </head>
@@ -135,8 +136,84 @@
           <!-- /.hotel-info__rating -->
         </div>
         <!-- /.hotel-info -->
-        <div class="hotel-picture"></div>
-        <!-- /.hotel-picture -->
+        <div class="hotel-grid">
+          <div class="hotel-grid__pictures">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="images/picture.jpg" alt="slider" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/picture.jpg" alt="slider" />
+                  <img src="images/picture.jpg" alt="slider" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- ./swiper -->
+          </div>
+          <!-- /.hotel-grid__pictures -->
+          <div class="booking">
+            <div class="booking-price">
+              <div class="booking-price__items">
+                <span class="booking-price__starts booking-price__item"
+                  >price starts as</span
+                ><span class="booking-price__numb booking-price__item"
+                  >$ 8,500</span
+                ><span class="booking-price__per booking-price__item"
+                  >per room / night</span
+                >
+              </div>
+              <!-- /.booking-price__items -->
+              <div class="booking-price__info">
+                <div class="booking-price__guest">
+                  <img
+                    class="booking-price__icon"
+                    src="images/icons/guest.svg"
+                    alt="IconGuest"
+                  />
+                  <span class="booking-price__description">2 x Guests</span>
+                </div>
+                <!-- /.booking-price__guest -->
+                <div class="booking-price__room">
+                  <img
+                    class="booking-price__icon"
+                    src="images/icons/room.svg"
+                    alt="IconRoom"
+                  />
+                  <span class="booking-price__description">1 x Room</span>
+                </div>
+                <!-- /.booking-price__room -->
+              </div>
+              <!-- /.booking-price__info -->
+            </div>
+            <!-- /.booking-price -->
+            <div class="booking-quick">
+              <span class="booking-quick__text">Quick Booking</span>
+              <div class="booking-quick__call">
+                <img
+                  class="booking-quick__call-icon"
+                  src="images/icons/call.svg"
+                  alt="CallPhone"
+                />
+                <span class="booking-quick__numb-phone">12100</span>
+              </div>
+              <!-- /.booking-quick__call -->
+            </div>
+            <!-- /.booking-quick -->
+
+            <button class="booking-btn">View Other Options</button>
+          </div>
+          <!-- /.booking -->
+          <div class="hotel-grid__map"></div>
+          <!-- /.hotel-grid__map -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.wrapper -->
     </section>
@@ -148,5 +225,7 @@
     <section class="activities"></section>
 
     <footer class="footer"></footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
