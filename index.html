@@ -144,7 +144,11 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="images/picture.jpg" alt="slider" />
+                  <img
+                    class="swiper-slide__pic"
+                    src="images/picture.jpg"
+                    alt="slider"
+                  />
                 </div>
                 <div class="swiper-slide">
                   <img src="images/picture.jpg" alt="slider" />
@@ -158,67 +162,98 @@
             <!-- ./swiper -->
           </div>
           <!-- /.hotel-grid__pictures -->
-          <div class="booking">
-            <div class="booking-price">
-              <div class="booking-price__items">
-                <span class="booking-price__starts booking-price__item"
-                  >price starts as</span
-                ><span class="booking-price__numb booking-price__item"
-                  >$ 8,500</span
-                ><span class="booking-price__per booking-price__item"
-                  >per room / night</span
-                >
-              </div>
-              <!-- /.booking-price__items -->
-              <div class="booking-price__info">
-                <div class="booking-price__guest">
-                  <img
-                    class="booking-price__icon"
-                    src="images/icons/guest.svg"
-                    alt="IconGuest"
-                  />
-                  <span class="booking-price__description">2 x Guests</span>
+          <div class="hotel-right">
+            <div class="booking">
+              <div class="booking-price">
+                <div class="booking-price__items">
+                  <span class="booking-price__starts booking-price__item"
+                    >price starts as</span
+                  ><span class="booking-price__numb booking-price__item"
+                    >$ 8,500</span
+                  ><span class="booking-price__per booking-price__item"
+                    >per room / night</span
+                  >
                 </div>
-                <!-- /.booking-price__guest -->
-                <div class="booking-price__room">
-                  <img
-                    class="booking-price__icon"
-                    src="images/icons/room.svg"
-                    alt="IconRoom"
-                  />
-                  <span class="booking-price__description">1 x Room</span>
+                <!-- /.booking-price__items -->
+                <div class="booking-price__info">
+                  <div class="booking-price__guest">
+                    <img
+                      class="booking-price__icon"
+                      src="images/icons/guest.svg"
+                      alt="IconGuest"
+                    />
+                    <span class="booking-price__description">2 x Guests</span>
+                  </div>
+                  <!-- /.booking-price__guest -->
+                  <div class="booking-price__room">
+                    <img
+                      class="booking-price__icon"
+                      src="images/icons/room.svg"
+                      alt="IconRoom"
+                    />
+                    <span class="booking-price__description">1 x Room</span>
+                  </div>
+                  <!-- /.booking-price__room -->
                 </div>
-                <!-- /.booking-price__room -->
+                <!-- /.booking-price__info -->
               </div>
-              <!-- /.booking-price__info -->
-            </div>
-            <!-- /.booking-price -->
-            <div class="booking-quick">
-              <span class="booking-quick__text">Quick Booking</span>
-              <div class="booking-quick__call">
-                <img
-                  class="booking-quick__call-icon"
-                  src="images/icons/call.svg"
-                  alt="CallPhone"
-                />
-                <span class="booking-quick__numb-phone">12100</span>
+              <!-- /.booking-price -->
+              <div class="booking-quick">
+                <span class="booking-quick__text">Quick Booking</span>
+                <div class="booking-quick__call">
+                  <img
+                    class="booking-quick__call-icon"
+                    src="images/icons/call.svg"
+                    alt="CallPhone"
+                  />
+                  <span class="booking-quick__numb-phone">12100</span>
+                </div>
+                <!-- /.booking-quick__call -->
               </div>
-              <!-- /.booking-quick__call -->
-            </div>
-            <!-- /.booking-quick -->
+              <!-- /.booking-quick -->
 
-            <button class="booking-btn">View Other Options</button>
+              <button class="booking-btn">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div class="map">
+              <iframe
+                class="map__google"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200721.93800535088!2d39.64591515503598!3d43.87229456782438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f691e18313993f%3A0x366c517c2ab365f0!2z0JPQvtGA0L3Ri9C5INC80L7QtNGD0LvRjCAtIEVtZXJnZW5jeSBIdXQ!5e1!3m2!1sru!2sru!4v1731418929896!5m2!1sru!2sru"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- /.map -->
           </div>
-          <!-- /.booking -->
-          <div class="hotel-grid__map"></div>
-          <!-- /.hotel-grid__map -->
+          <!-- /.hotel-right -->
         </div>
         <!-- /.hotel-grid -->
       </div>
       <!-- /.wrapper -->
     </section>
 
-    <section class="newsletter"></section>
+    <section class="newsletter">
+      <div class="newsletter__main">
+        <div class="newsletter__text">
+          <span class="newsletter__sub"></span>
+          <span class="newsletter__name"></span>
+        </div>
+        <!-- /.newsletter__text -->
+        <form action="" class="newsletter">
+          <input
+            type="text"
+            class="newsletter__input"
+            placeholder="Your email address"
+          />
+          <button class="newsletter__btn">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter__main -->
+    </section>
 
     <sectoin class="feedback"></sectoin>
 

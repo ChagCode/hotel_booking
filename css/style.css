@@ -210,6 +210,13 @@ body {
   background-image: url(../images/icons/arrow-left.svg);
 }
 
+.hotel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .booking {
   display: flex;
   flex-direction: column;
@@ -220,7 +227,6 @@ body {
   color: #fff;
   font-family: "Nunito", sans-serif;
   padding: 26px 26px 29px 29px;
-  margin-left: 30px;
 }
 .booking-price {
   display: flex;
@@ -250,7 +256,6 @@ body {
   display: block;
 }
 .booking-price__info {
-  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -262,6 +267,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.booking-price__description {
+  margin-left: 9px;
 }
 .booking-price__icon {
   width: 14px;
@@ -280,6 +288,15 @@ body {
   height: 45px;
   color: #fff;
   background-color: #ec1f46;
+  cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+}
+.map__google {
+  border-radius: 8px;
 }
 
 /* xl-размер (>=1200px) */
@@ -289,6 +306,14 @@ body {
   /* CSS для ширины от 992px до 1199px */
   .wrapper {
     max-width: 960px;
+  }
+  .swiper {
+    width: 590px;
+  }
+  .swiper-slide {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* md-размер (<=991px) */
@@ -317,8 +342,22 @@ body {
   .header-menu__item {
     font-size: 12px;
   }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide__pic {
+    width: 100%;
+    height: 100%;
+  }
   .search-form {
     max-width: 340px;
+  }
+  .hotel-right {
+    flex-direction: row;
+    margin-top: 30px;
   }
 }
 /* sm-размер (<=768px) */
@@ -369,6 +408,25 @@ body {
     order: -1;
     margin-left: 0;
   }
+  .swiper {
+    max-height: 350px;
+  }
+  .swiper-slide {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hotel-right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .booking {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .map {
+    width: 100%;
+  }
 }
 @media (max-width: 575px) {
   .header__logo {
@@ -376,5 +434,22 @@ body {
   }
   .header__logo-link {
     max-width: 100%;
+  }
+  .swiper {
+    max-width: 575px;
+    height: 250px;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .hotel-right {
+    flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

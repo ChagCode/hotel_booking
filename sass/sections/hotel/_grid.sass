@@ -39,8 +39,14 @@
       left: 18px
       background-image: url(../images/icons/arrow-left.svg)
 
-// &__booking
+// block BOOKING and MAP
+.hotel-right
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-end
 
+// block BOOKING
 .booking
   display: flex
   flex-direction: column
@@ -51,7 +57,6 @@
   color: $light
   font-family: "Nunito", sans-serif
   padding: 26px 26px 29px 29px
-  margin-left: 30px
   &-price
     display: flex
     justify-content: space-between
@@ -74,7 +79,6 @@
     &__item
       display: block
     &__info
-      width: 80px
       display: flex
       flex-direction: column
       justify-content: space-between
@@ -85,6 +89,8 @@
       display: flex
       justify-content: space-between
       align-items: center
+    &__description
+      margin-left: 9px
     &__icon
       width: 14px
       height: 14px
@@ -102,3 +108,12 @@
     height: 45px
     color: $light
     background-color: $btn-color
+    cursor: pointer
+
+// block MAP
+
+.map
+  width: 347px
+  height: 213px
+  &__google
+    border-radius: 8px

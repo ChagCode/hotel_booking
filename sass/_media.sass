@@ -7,6 +7,12 @@
   .wrapper
     max-width: 960px
 
+  .swiper
+    width: 590px
+    &-slide
+      height: 100%
+      object-fit: cover
+
 /* md-размер (<=991px) */
 @media (max-width: 991px)
   /* CSS для ширины от 768px до 991px */
@@ -28,8 +34,20 @@
         padding-bottom: 22px
       &__item
         font-size: 12px
+  .hotel-grid
+    flex-direction: column
+  .swiper
+    width: 100%
+    &-slide
+      &__pic
+        width: 100%
+        height: 100%
   .search-form
     max-width: 340px
+
+  .hotel-right
+    flex-direction: row
+    margin-top: 30px
 
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
@@ -75,7 +93,19 @@
       &__offer
         order: -1
         margin-left: 0
-
+  .swiper
+    max-height: 350px
+    &-slide
+      height: 100%
+      object-fit: cover
+  .hotel-right
+    flex-direction: column
+    margin-top: 20px
+  .booking
+    width: 100%
+    margin-bottom: 20px
+  .map
+    width: 100%
 // /* xs-размер (<=575px) */
 @media (max-width: 575px)
   .header
@@ -83,5 +113,17 @@
       max-width: 99px
       &-link
         max-width: 100%
+  .swiper
+    max-width: 575px
+    height: 250px
+    &-slide
+      width: 100%
+      height: 100%
+  .hotel-right
+    flex-direction: column
+  .booking
+    width: 100%
+  .map
+    width: 100%
 
 //   /* CSS для ширины до 575px (включительно) */
