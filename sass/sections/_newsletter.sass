@@ -1,0 +1,57 @@
+.newsletter
+  &__main
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url("../images/newsletter.jpg")
+    background-position: center center
+    background-size: cover
+    width: 100%
+    height: 260px
+    margin-top: 70px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba($view-booking, 0.8)
+  &__text
+    display: flex
+    flex-direction: column
+    color: $light
+    z-index: 1
+    &-sub
+      display: block
+      font-size: 24px
+    &-name
+      display: block
+      font-size: 36px
+  &-form
+    position: relative
+    width: 350px
+    height: 55px
+    overflow: hidden
+    border-radius: 4px
+    &__input
+      width: 100%
+      height: 100%
+      border: none
+      padding-top: 18px
+      padding-right: 72px
+      padding-bottom: 18px
+      padding-left: 33px
+      background-color: $light
+    &__btn
+      position: absolute
+      right: 0
+      top: 0
+      width: 65px
+      height: 100%
+      background-color: $btn-color
+      color: $light
+      font-size: 12px
