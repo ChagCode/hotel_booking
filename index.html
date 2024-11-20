@@ -238,19 +238,22 @@
 
     <section class="newsletter">
       <div class="newsletter__main">
-        <div class="newsletter__text">
-          <span class="newsletter__text-sub">subscribe to our</span>
-          <span class="newsletter__text-name">Newsletter</span>
+        <div class="newsletter-info">
+          <div class="newsletter-info__text newsletter-text">
+            <span class="newsletter-info__text-sub">subscribe to our</span>
+            <span class="newsletter-info__text-name">Newsletter</span>
+          </div>
+          <!-- /.newsletter__text -->
+          <form action="" class="newsletter-form subscribe">
+            <input
+              type="text"
+              class="newsletter-form__input"
+              placeholder="Your email address"
+            />
+            <button class="newsletter-form__btn">Send</button>
+          </form>
         </div>
-        <!-- /.newsletter__text -->
-        <form action="" class="newsletter-form">
-          <input
-            type="text"
-            class="newsletter-form__input"
-            placeholder="Your email address"
-          />
-          <button class="newsletter-form__btn">Send</button>
-        </form>
+        <!-- /.newsletter-info -->
       </div>
       <!-- /.newsletter__main -->
     </section>

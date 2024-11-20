@@ -49,11 +49,6 @@
     flex-direction: row
     margin-top: 30px
 
-  // block NEWSLETTER
-  .newsletter
-    &__main
-      margin-top: 60px
-
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
   /* CSS для ширины от 576px до 767px */
@@ -112,10 +107,14 @@
   .map
     width: 100%
 
-// block NEWSLETTER
-  // .newsletter
-  //   &__text
-  //     margin-right: 108px
+  .newsletter
+    &-info
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+    &-text
+      margin-bottom: 37px
 
 // /* xs-размер (<=575px) */
 @media (max-width: 575px)
@@ -135,6 +134,9 @@
   .booking
     width: 100%
   .map
+    width: 100%
+
+  .subscribe
     width: 100%
 
 //   /* CSS для ширины до 575px (включительно) */
