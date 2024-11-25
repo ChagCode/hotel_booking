@@ -13,6 +13,9 @@
       height: 100%
       object-fit: cover
 
+  .card
+    width: 230px
+    height: 230px
 /* md-размер (<=991px) */
 @media (max-width: 991px)
   /* CSS для ширины от 768px до 991px */
@@ -48,6 +51,15 @@
   .hotel-right
     flex-direction: row
     margin-top: 30px
+
+  .activities
+    &-container
+      flex-wrap: wrap
+    &-card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
 
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
@@ -115,6 +127,14 @@
       align-items: flex-start
     &-text
       margin-bottom: 37px
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 36px
+  .card
+    width: 48%
+    height: 255px
 
 // /* xs-размер (<=575px) */
 @media (max-width: 575px)
@@ -137,6 +157,9 @@
     width: 100%
 
   .subscribe
+    width: 100%
+
+  .card
     width: 100%
 
 //   /* CSS для ширины до 575px (включительно) */
