@@ -1,0 +1,38 @@
+.packeges {
+  margin-top: 70px;
+}
+
+.large-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 366px 364px;
+  grid-template-rows: 1;
+  height: 500px;
+}
+.large-card__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 366px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.middle-card {
+  position: relative;
+  width: 350px;
+  height: 500px;
+}
+.middle-card__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=packeges.css.map */
