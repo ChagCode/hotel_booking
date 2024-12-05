@@ -6,16 +6,20 @@
   /* CSS для ширины от 992px до 1199px */
   .wrapper
     max-width: 960px
-
   .swiper
     width: 590px
     &-slide
       height: 100%
       object-fit: cover
-
   .card
     width: 230px
     height: 230px
+  .large-card
+    width: 630px
+  .large-info
+    padding: 40px 18px 25px 30px
+  .middle-card
+    width: 300px
 /* md-размер (<=991px) */
 @media (max-width: 991px)
   /* CSS для ширины от 768px до 991px */
@@ -61,6 +65,14 @@
     width: 339px
     height: 255px
 
+  .large-card
+    width: 100%
+  .middle-card
+    width: 365px
+  .cards
+    margin-bottom: 30px
+  .newsletter__main
+    margin-top: 30px
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
   /* CSS для ширины от 576px до 767px */
@@ -135,7 +147,29 @@
   .card
     width: 48%
     height: 255px
-
+  .packeges
+    margin-top: 45px
+    &__title
+      margin-bottom: 45px
+  .large-card
+    height: 480px
+  .large-info
+    padding: 30px 18px 25px 30px
+    &__text
+      margin-bottom: 20px
+    &__price-old
+      margin-top: 25px
+  .middle-card
+    width: 280px
+    height: 480px
+  .middle-info
+    padding: 25px 17px 20px 25px
+    &__text
+      font-size: 12px
+    &__btn
+      padding: 8px 20px
+  .cards
+    margin-bottom: 15px
 // /* xs-размер (<=575px) */
 @media (max-width: 575px)
   .header
@@ -161,5 +195,26 @@
 
   .card
     width: 100%
+
+  .large-card
+    flex-direction: column
+    &__img
+      right: 0
+      width: 100%
+      height: 50%
+  .large-info
+    width: 100%
+    height: 50%
+    padding: 27px 21px 25px 32px
+    &__hotel-name
+      margin-bottom: 18px
+    &__text
+      display: none
+  .middle-card
+    width: 100%
+  .middle-info
+    padding: 30px 21px 25px 32px
+    &__btn
+      padding: 11px 27px
 
 //   /* CSS для ширины до 575px (включительно) */
