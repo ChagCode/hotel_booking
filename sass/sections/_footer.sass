@@ -1,0 +1,85 @@
+.footer
+  padding: 108px 0 46px 0
+  background-color: $view-booking
+  &-container
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 20px
+  &__logo
+    grid-row: 2 span
+  &__categories
+    grid-row: 2 span
+  &__title
+    margin-bottom: 18px
+    color: $light
+    font-weight: 700
+    font-size: 18px
+    text-transform: uppercase
+    &--inline
+      margin: 0 43px 0 0
+    &--mb-3
+      margin-bottom: 34px
+  &__item
+    display: flex
+    align-items: flex-start
+    color: $footer-text
+    font-weight: 400
+    font-size: 14px
+    line-height: 160%
+    &--mb-2
+      margin-bottom: 20px
+  &__link
+    color: inherit
+  &__icon-wrapper
+    min-width: 40px
+  &__contact-from
+    grid-column: 3 / 5
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__input
+    flex-basis: 48%
+    order: none
+    font-weight: 400
+    font-size: 12px
+    color: $footer-text
+    padding: 0 23px
+    height: 50px
+    border-radius: 4px
+    margin-bottom: 15px
+  &__message
+    flex-basis: 100%
+    order: none
+    font-weight: 400
+    font-size: 12px
+    color: #bdbdbd
+    border-radius: 4px
+    padding: 18px 23px
+    margin-bottom: 22px
+    height: 123px
+  &__btn
+    font-weight: 700
+    font-size: 12px
+    color: $light
+    padding: 18px 65px
+    border-radius: 4px
+    min-width: 160px
+    min-height: 50px
+    background-color: $btn-color
+  &__required-fields
+    font-weight: 700
+    font-size: 12px
+    color: #e0e0e0
+  &__social
+    grid-column: 2 span
+    display: flex
+    align-items: center
+    margin-bottom: 80px
+    &-links
+      display: flex
+      justify-content: space-between
+      max-width: 85px
+  &__details
+    grid-column: 1 / 3
