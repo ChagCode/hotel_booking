@@ -73,6 +73,11 @@
     margin-bottom: 30px
   .newsletter__main
     margin-top: 30px
+
+  .footer
+    &__input
+      flex-basis: 100%
+
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
   /* CSS для ширины от 576px до 767px */
@@ -170,6 +175,33 @@
       padding: 8px 20px
   .cards
     margin-bottom: 15px
+
+  .footer
+    &-container
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      grid-column: span 2
+      width: 104px
+      height: 120px
+    &__social
+      grid-row: 1 / 3
+      grid-column: 3 / 7
+      margin: 0
+      align-self: center
+    &__categories
+      grid-row: 3 / 4
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__details
+      grid-column: span 6
+    &__contact-from
+      grid-column: span 6
+    &__input
+      flex-basis: 48%
 // /* xs-размер (<=575px) */
 @media (max-width: 575px)
   .header
@@ -216,5 +248,37 @@
     padding: 30px 21px 25px 32px
     &__btn
       padding: 11px 27px
-
+  .footer
+    &-container
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      width: 104px
+      height: 120px
+    &__social
+      grid-row: 2
+      grid-column: 1
+      flex-direction: column
+      align-items: start
+    &__title--inline
+      margin-bottom: 22px
+    &__categories
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__details
+      grid-row: 6
+      grid-column: 1
+    &__contact-from
+      grid-row: 7
+      grid-column: 1
+    &__input
+      flex-basis: 100%
 //   /* CSS для ширины до 575px (включительно) */
