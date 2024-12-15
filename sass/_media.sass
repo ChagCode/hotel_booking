@@ -81,12 +81,46 @@
 /* sm-размер (<=768px) */
 @media (max-width: 767px)
   /* CSS для ширины от 576px до 767px */
+  body
+    padding-top: 78px
   .wrapper
     max-width: 576px
     width: 92%
   .header
-    .search-form, &__user, &-menu
+    .search-form, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      &-name
+        color: $light
+      &-avatar
+        margin-right: 0
+        margin-bottom: 10px
+    &-menu
       display: none
+      position: fixed
+      top: 75px
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 100
+      &--visible
+        display: block
+      &__list
+        flex-direction: column
+        align-items: center
+        padding-top: 31px
+
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+
     &__hidden-menu
       width: 16px
       height: 11px
@@ -100,6 +134,14 @@
         background-color: $text-color
         width: 16px
         height: 1px
+    &__top
+      &--mobile
+        &--fixed
+          position: fixed
+          top: 0
+          left: 0
+          right: 0
+          z-index: 99
 
   .breadcrump
     &-list

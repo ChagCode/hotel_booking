@@ -23,6 +23,7 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #fff;
 }
 .header__search {
   margin-right: auto;
@@ -81,6 +82,9 @@ body {
 .header-menu__item {
   color: #fff;
   font-size: 14px;
+}
+.header-menu__item--mobile--visible {
+  display: none;
 }
 
 .breadcrump {
@@ -668,7 +672,6 @@ body {
   order: none;
   font-weight: 400;
   font-size: 12px;
-  color: #bdbdbd;
   padding: 0 23px;
   height: 50px;
   border-radius: 4px;
@@ -817,12 +820,51 @@ body {
 /* sm-размер (<=768px) */
 @media (max-width: 767px) {
   /* CSS для ширины от 576px до 767px */
+  body {
+    padding-top: 78px;
+  }
   .wrapper {
     max-width: 576px;
     width: 92%;
   }
-  .header .search-form, .header__user, .header-menu {
+  .header .search-form--mobile--hidden, .header__user--mobile--hidden {
     display: none;
+  }
+  .header .search-form--mobile--visible, .header__user--mobile--visible {
+    display: flex;
+  }
+  .header__user {
+    flex-direction: column;
+  }
+  .header__user-name {
+    color: #fff;
+  }
+  .header__user-avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header-menu {
+    display: none;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+  .header-menu--visible {
+    display: block;
+  }
+  .header-menu__list {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 31px;
+  }
+  .header-menu__item {
+    margin-bottom: 20px;
+  }
+  .header-menu__item--mobile--visible {
+    display: block;
   }
   .header__hidden-menu {
     width: 16px;
@@ -838,6 +880,13 @@ body {
     background-color: #333333;
     width: 16px;
     height: 1px;
+  }
+  .header__top--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
   }
   .breadcrump-list__item {
     font-size: 10px;

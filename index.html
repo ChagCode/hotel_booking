@@ -12,7 +12,7 @@
   <body>
     <header class="header">
       <div class="wrapper">
-        <div class="header__top">
+        <div class="header__top header__top--mobile--fixed">
           <a href="#" class="header__logo">
             <img
               src="images/logo.png"
@@ -21,7 +21,10 @@
             />
           </a>
 
-          <form action="" class="header__search search-form">
+          <form
+            action=""
+            class="header__search search-form search-form--mobile--hidden"
+          >
             <input
               type="text"
               class="search-form__input"
@@ -36,7 +39,7 @@
             </button>
           </form>
 
-          <a href="#" class="header__user">
+          <a href="#" class="header__user header__user--mobile--hidden">
             <img
               src="images/avatar.png"
               alt="Avatar Nathan"
@@ -57,6 +60,35 @@
       <div class="header-menu">
         <div class="wrapper">
           <ul class="header-menu__list">
+            <li class="header-menu__item header-menu__item--mobile--visible">
+              <a href="#" class="header__user header__user--mobile--visible">
+                <img
+                  src="images/avatar.png"
+                  alt="Avatar Nathan"
+                  class="header__user-avatar"
+                />
+                <span class="header__user-name">Nathan</span>
+              </a>
+            </li>
+            <li class="header-menu__item header-menu__item--mobile--visible">
+              <form
+                action=""
+                class="header__search search-form search-form--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search-form__input"
+                  placeholder="Search Location"
+                />
+                <button class="search-form__btn">
+                  <img
+                    src="images/icons/search.svg"
+                    alt="search"
+                    class="search-form__icon"
+                  />
+                </button>
+              </form>
+            </li>
             <li class="header-menu__item">
               <a href="#" class="header-menu__link">All Deals</a>
             </li>

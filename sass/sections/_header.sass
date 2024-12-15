@@ -1,12 +1,12 @@
 .header
   background-color: $light
-
   &__top
     display: flex
     justify-content: space-between
     align-items: center
     padding-top: 40px
     padding-bottom: 40px
+    background-color: $light
 
   &__search
     margin-right: auto
@@ -38,7 +38,6 @@
       width: 65px
       height: 100%
       background-color: $btn-color
-
   &__user
     display: flex
     align-items: center
@@ -46,7 +45,10 @@
       margin-right: 18px
     &-name
       color: $text-color
-
+  // .search-form, &__user
+  //   &--mobile
+  //     &--visible
+  //       display: none
   &-menu
     max-width: initial
     margin: initial
@@ -59,3 +61,6 @@
     &__item
       color: $light
       font-size: 14px
+      &--mobile
+        &--visible
+          display: none

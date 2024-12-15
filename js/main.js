@@ -9,6 +9,10 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// скрипт для конопок на клавиатуре начало
-
-// скрипт для конопок на клавиатуре конец
+var menuButton = document.querySelector(".header__hidden-menu");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке");
+  document
+    .querySelector(".header-menu")
+    .classList.toggle("header-menu--visible");
+});
